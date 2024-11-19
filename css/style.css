@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Titillium Web', sans-serif;
+
+}
+#pantallaCabecera{
+    padding: 10px 20px;
+    text-align: center;
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+#pantallaLogin, #pantallaRegister{
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    
+}
+#pantallaLogin h2, #pantallaRegister h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+#pantallaLogin form input, #pantallaRegister form input{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    
+}
+h3{
+    font-size: 20px;
+
+}
+
+input[type="button"] {    
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+
+
+input[type="button"]:hover{
+    background-color: aqua;
+}
+#btnRegistrarComprador, #btnLogin{
+    margin-bottom : 20px;
+}
+
+.contenedor #pantallaMenuComprador, #pantallaMenuAdministrador{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+#pantallaMenuComprador, #pantallaMenuAdministrador{
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+#pantallaMenuComprador table, #pantallaMenuAdministrador table{
+    width: 90%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    font-style: italic;
+}
+#pantallaMenuComprador table td,#pantallaMenuAdministrador0 table td{
+    padding: 10px;
+}

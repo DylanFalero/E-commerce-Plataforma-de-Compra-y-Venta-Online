@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+        <title>Document</title>
+</head>
+
+<body>
+    <div id="pantallaCabecera">
+        <p id="msgUsuarioConectado"></p>
+        <input type="button" id="btnCabeceraCerrarSesion" value="Cerrar Sesion">
+
+    </div>
+
+    <div class="contenedor">
+        <div id="pantallaLogin">
+            <h2>Login</h2>
+            <form action="login" method="post">
+                <lavel for="nombreUsuario">Usuario</lavel>
+                <input type="text" name="nombreUsario" id="txtLoginUsuario" placeholder="Dylan"><br>
+                <lavel for="pass">Contraseña</lavel>
+                <input type="password" name="pass" id="txtLoginPass" placeholder="Falero1"><br><br>
+                <input type="button" id="btnLogin" value="Login">
+                <input type="button" value="Registrar usuario" id="btnRegistrarComprador">
+                <p id="msgLogin"></p>
+            </form>
+        </div>
+
+
+        <div id="pantallaRegister">
+            <h2>Registrarse</h2>
+            <form action="register" method="post">
+                <lavel for="nombre">Nombre</lavel>
+                <input type="text" name="nombre" id="txtRegisterNombre" required placeholder="Dylan"><br>
+                <lavel for="apellido">Apellido</lavel>
+                <input type="text" name="apellido" id="txtRegisterApellido" required placeholder="Falero"><br>
+                <lavel for="nombreUsuario">Usuario</lavel>
+                <input type="text" name="nombreUsario" id="txtRegisterNombreUsuario" required placeholder="Dfalero"><br>
+                <lavel for="pass">Contraseña</lavel>
+                <input type="password" name="pass" id="txtRegisterPass" required placeholder="Dfalero1"><br>
+                <lavel for="tarjeta">Tarjeta</lavel>
+                <input type="number" name="tarjeta" id="txtRegisterTarjeta" required
+                    placeholder="1234-5678-9101-1121"><br>
+                <lavel for="CVC">CVC</lavel>
+                <input type="number" name="cvc" id="txtRegisterCVC" required placeholder="563"><br>
+                <input type="button" value="Registrarse" id="btnRegister">
+            </form>
+            <p id="msgResultado"></p>
+        </div>
+
+        <div id="pantallaMenuAdministrador">
+            <h2>Menu Administrador</h2>
+            <input type="button" value="Tienda" id="btnAdmisnistrador">
+            <input type="button" value="Ofertas" id="btnAdministrador-ofertas">
+            <input type="button" value="Administrar Compras" id="btnAdmisnistrador-administrarCompras">
+            <input type="button" value="Listar Productos" id="btnAdmisnistrador-lsitarCompras">
+            <input type="button" value="Administrar Productos" id="btnAdmisnistrador-administrarProductos">
+            <input type="button" value="Ver Ganancias" id="btnAdmisnistrador-verGanancias">
+            <p id="msgMostrarAdmin"></p>
+            
+            
+            <br>
+            <hr>
+        </div>
+
+        <div id="pantallaMenuComprador">
+            <h2>Menu Comprador</h2>
+            <input type="button" value="Articulos" id="btnComprador">
+            <input type="button" value="Ver listado de Productos" id="btnComprador-comprarProductos">
+            <input type="button" value="Ofertas" id="btnComprador-ofertas">
+            <p id="msgMostrar"></p>
+
+            <br><br><div id="seccionFiltroComprador">
+                <h3>Filtrp por estado de compra:</h3>
+                <select id="slcSeleccionarComprador">
+                    <option value="todos">Todos</option>
+                    <option value="aprobado">Aprobados</option>
+                    <option value="rechazado">Rechazados</option>
+                    <option value="pendiente">Pendiente</option>
+                </select>
+            <input type="button" id="btnFiltrarComprador" value="Filtrar">
+            <p id="msgFiltroComprador"></p>
+            <br>
+            <hr>
+        </div>
+        
+        
+    </div>
+
+    
+
+    <script src="js/obligatorio.js"></script>
+</body>
+
+</html>
